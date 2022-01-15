@@ -1,0 +1,39 @@
+<html>
+
+  <head>
+
+    <title>Your House Live Streaming</title>
+
+    <link rel="stylesheet" href='../static/style.css'/>
+
+    <style>
+
+		body {
+
+			text-align: center;
+
+		}
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <h1>Your House Live Streaming</h1>
+
+    <h3><img src="{{ url_for('video_feed') }}" width="80%"></h3>
+
+    <h3>{{ time }}</h3>
+
+    <hr>
+
+	<h3> Return to main page ==> <a href="/login"class="button">RETURN</a></h3>
+
+	<hr>
+
+	<p> @2021 Developed by Kishon's Security Solutions</p>
+
+  </body>
+
+</html>

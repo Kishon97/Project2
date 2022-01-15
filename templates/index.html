@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+
+
+<html>
+
+
+
+<head>
+
+
+
+<title> GPIO Control Web App</title>
+
+
+
+<link rel="stylesheet" href='../static/style.css'/>
+
+
+
+</head>
+
+
+
+<body>
+
+ <style>
+
+
+
+		body {
+
+
+
+			text-align: center;
+
+
+
+		}
+
+
+
+ </style>
+
+
+
+<h1>Scare Them OFF!!!!!</h1><br>
+
+<h3> MOTION ==>  {{ senPIR  }}</h3>
+<link href="https://api.telegram.org/bot1629771029:AAGhiTQlhRB2iVzSdbsinLTxAOppdgpKfH4/sendMessage?chat_id=-563437295&text={}">
+
+<h2>Status</h2>
+
+
+<h3> RED LED --> {{ledRed}}</h3>
+
+
+
+<h3> BUZZER --> {{buzzer}}</h3>
+
+
+
+<h3> GREEN LED --> {{ledGreen}}</h3><br>
+
+
+
+<h2>Led Control</h2>
+
+
+
+<h3> RED LED CNTRL ==> <a href ="/ledRed/on" class="button">TURN ON</a> <a href="/ledRed/off" class = "button">TURN OFF</a></h3>
+
+
+
+<h3> BUZZER CNTRL ==> <a href="/buzzer/on" class="button">TURN ON</a> <a href="/buzzer/off" class="button">TURN OFF</a></h3>
+
+ 
+
+<h3> GREEN LED CNTRL ==> <a href="/ledGreen/on" class="button">TURN ON</a> <a href="/ledGreen/off" class="button">TURN OFF</a></h3>
+
+
+
+<br>
+
+<h1>Your House Live Streaming</h1>
+
+
+
+<h3><img src="{{ url_for('video_feed') }}" margin-left=" 400px"; margin-right= "400px"; width="70%"></h3>
+
+
+
+<h3>{{ time }}</h3>
+
+
+
+<h3> Return to Exit ==> <a href="/login"class="button">RETURN</a></h3>
+
+<p> @2021 Developed by Kishon's Security Solutions</p>
+
+
+
+</body>
+
+
+
+</html>
+
+
+
+
+
+
